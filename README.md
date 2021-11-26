@@ -1,2 +1,24 @@
-# vue3-ts-skeleton
-稍稍加工一下之后的vue-ts骨架项目
+# fe-dgp-web
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
