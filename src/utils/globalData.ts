@@ -1,3 +1,3 @@
 export default {
-  isQiankun: true,
+  isQiankun: false,
 }

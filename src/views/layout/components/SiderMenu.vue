@@ -36,8 +36,13 @@ import { asyncRoutes } from '@/router/index'
 import lodash from 'lodash'
 import { computed, defineComponent, ref, Ref } from 'vue'
 import { useRoute, RouteRecordRaw } from 'vue-router'
+import { ElSubMenu, ElMenuItem } from 'element-plus'
 
 export default defineComponent({
+  components: {
+    ElSubMenu,
+    ElMenuItem,
+  },
   props: {
     collapse: {
       type: Boolean,

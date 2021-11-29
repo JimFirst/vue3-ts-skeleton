@@ -1,15 +1,17 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Layout from '@/views/layout/layout.vue'
+import engineering from './engineering'
 export const constRoutes: Array<RouteRecordRaw> = [
-  { path: '/', redirect: '/project' },
+  { path: '/', redirect: '/engineering' },
 ]
 export const asyncRoutes: Array<RouteRecordRaw> = [
   {
-    path: '/project',
+    path: '/engineering',
     name: 'home',
     meta: { title: '工程管理', icon: 'el-icon-folder-opened' },
     component: Layout,
-    children: [],
+    redirect: '/engineering/list',
+    children: [...engineering],
   },
 ]
 
