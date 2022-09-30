@@ -1,7 +1,6 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
 import { ElMessage } from 'element-plus'
 import { HttpRes } from '@/interfaces/index'
-import store from '../store'
 
 const request = axios.create({
   baseURL: '',
@@ -10,16 +9,6 @@ const request = axios.create({
 
 request.interceptors.request.use(
   (config) => {
-    // 造数平台接入分组id
-    // config.headers.token = ''
-    config.data.projectId = store.getters.projectId
-    // config.data.projectId = 56
-    const loginInfo = localStorage.getItem('loginInfo')
-    if (loginInfo && loginInfo.length) {
-      const loginInfoJson = JSON.parse(loginInfo)
-      config.headers.token = loginInfoJson.token
-      localStorage.setItem('token', loginInfoJson.token)
-    }
     return config
   },
   (error) => {

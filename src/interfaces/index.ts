@@ -4,3 +4,7 @@ export interface HttpRes<T = unknown> {
   errmsg: string
   data: T
 }
+export interface Pagination {
+  pageSize: number
+  pageNum: number
+}

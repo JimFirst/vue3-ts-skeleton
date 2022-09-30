@@ -1,4 +1,4 @@
-# fe-dgp-web
+# Vue3 skeleton
 
 ## Project setup
 ```
