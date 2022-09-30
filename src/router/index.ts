@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Layout from '@/views/layout/layout.vue'
 import engineering from './engineering'
-export const constRoutes: Array<RouteRecordRaw> = [
-  { path: '/', redirect: '/engineering' },
-]
+export const constRoutes: Array<RouteRecordRaw> = [{ path: '/', redirect: '/engineering' }]
 export const asyncRoutes: Array<RouteRecordRaw> = [
   {
     path: '/engineering',

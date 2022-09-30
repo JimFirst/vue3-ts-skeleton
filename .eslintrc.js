@@ -19,5 +19,6 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 0,
     'eslintvue/no-mutating-props': 0,
     'vue/no-use-v-if-with-v-for': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0
   },
 }
